@@ -40,12 +40,12 @@ window#waybar.termite {
   background: rgba(0, 0, 0, 0.2);
 }
 
-#workspaces button.focused {
-  color: #64727d;
+#workspaces button.active {
+  color: rgba(41, 238, 223, 1);
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  color: rgba(220, 50, 47, 1);
 }
 
 #clock,
