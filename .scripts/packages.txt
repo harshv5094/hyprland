@@ -8,7 +8,6 @@ network-manager-applet
 grimblast
 playerctl
 dunst
-thunar
 waybar
 wlogout
 copyq
