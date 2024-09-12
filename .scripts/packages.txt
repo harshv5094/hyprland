@@ -1,0 +1,14 @@
+hyprland
+hyprlock
+hypridle
+waypaper
+blueman
+network-manager-applet
+grimblast
+playerctl
+dunst
+thunar
+waybar
+wlogout
+copyq
+polkit-gnome
