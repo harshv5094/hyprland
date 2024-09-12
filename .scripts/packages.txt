@@ -1,6 +1,7 @@
 hyprland
 hyprlock
 hypridle
+hyprpicker
 waypaper
 blueman
 network-manager-applet
