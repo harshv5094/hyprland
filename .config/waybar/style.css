@@ -3,7 +3,6 @@
   /* `otf-font-awesome` is required to be installed for icons */
   font-weight: 700;
   font-size: 15px;
-  margin: 1.5px 0px;
 }
 
 window#waybar {
