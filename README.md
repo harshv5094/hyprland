@@ -1,7 +1,7 @@
 # Hyprland Setup
 
 > [!WARNING]
-> This repo installation script is for fedora
+> This repo installation script only works fedora
 
 ## `FAQ:` How To install?
 
