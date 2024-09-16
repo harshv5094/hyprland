@@ -16,3 +16,10 @@ else
   stow .
   echo "Hyprland Directories are linked"
 fi
+
+echo "Clonning my wallpapers"
+if [ ! -d "$HOME/Pictures/wall" ]; then
+  git clone https://github.com/harshv5094/wall ~/Pictures/
+else
+  echo "wallpapers directory is already clonned"
+fi
