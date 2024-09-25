@@ -11,6 +11,7 @@
     "backlight",
     "clock",
     "battery",
+    "custom/notification-tray",
   ],
   "group/systray": {
     "orientation": "horizontal",
@@ -87,5 +88,10 @@
       "default": [" ", " ", " "],
     },
     "on-click": "pavucontrol",
+  },
+  "custom/notification-tray": {
+    "on-click": "swaync-client -t",
+    "format": "🔔",
+    "reset-interval": 1,
   },
 }
