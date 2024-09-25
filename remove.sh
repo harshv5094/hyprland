@@ -30,6 +30,12 @@ checkFolderStatus() {
 }
 
 packageRemove() {
+  printf "%b\n" "${RED}***Disabling hyprland copr***${RC}"
+  if command -v dnf &>/dev/null; then
+    sudo dnf copr disable solopasha/hyprland
+    cmdCheck
+  fi
+
   packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
   printf "\n%b\n" "${CYAN} **Removing ${RED}$packages${RESET}${CYAN}** ${RESET}"
   if command -v dnf &>/dev/null; then

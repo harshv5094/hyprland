@@ -37,6 +37,12 @@ checkFolderStatus() {
 }
 
 packageInstall() {
+  printf "%b\n" "${CYAN}***Enabling hyprland copr***${RC}"
+  if command -v dnf &>/dev/null; then
+    sudo dnf copr enable solopasha/hyprland
+    cmdCheck
+  fi
+
   packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
   printf "\n%b\n" "${CYAN} **Installing ${RED}$packages${RESET}${CYAN}** ${RESET}"
   if command -v dnf &>/dev/null; then
