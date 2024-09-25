@@ -91,7 +91,7 @@
   },
   "custom/notification-tray": {
     "on-click": "swaync-client -t",
-    "format": "🔔",
+    "format": " ",
     "reset-interval": 1,
   },
 }
