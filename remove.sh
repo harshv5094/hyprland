@@ -31,7 +31,7 @@ checkFolderStatus() {
 
 packageRemove() {
   packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
-  printf "\n%b\n" "${CYAN} **Installing ${RED}$packages${RESET}${CYAN}** ${RESET}"
+  printf "\n%b\n" "${CYAN} **Removing ${RED}$packages${RESET}${CYAN}** ${RESET}"
   if command -v dnf &>/dev/null; then
     sudo dnf remove $packages
   fi
