@@ -1,24 +1,25 @@
 window {
   margin: 2px;
   border: 1px solid #bd93f9;
+  border-radius: 20px;
   background-color: #282a36;
 }
 
 #input {
-  margin: 5px;
+  margin: 8px;
   border: none;
   color: #f8f8f2;
   background-color: #44475a;
 }
 
 #inner-box {
-  margin: 5px;
+  margin: 8px;
   border: none;
   background-color: #282a36;
 }
 
 #outer-box {
-  margin: 5px;
+  margin: 8px;
   border: none;
   background-color: #282a36;
 }
@@ -29,7 +30,7 @@ window {
 }
 
 #text {
-  margin: 5px;
+  margin: 8px;
   border: none;
   color: #f8f8f2;
 }
