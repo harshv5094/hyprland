@@ -15,7 +15,7 @@ cmdCheck() {
 }
 
 checkFolderStatus() {
-  dir_paths=("hypr" "dunst" "waybar" "waypaper" "wlogout" "wofi")
+  dir_paths=("hypr" "swaync" "waybar" "waypaper" "wlogout" "wofi")
   printf "%b\n" "${CYAN}Checking folder status${RESET}"
   for folder in "${dir_paths[@]}"; do
     if [ -e "$HOME/.config/$folder" ]; then
@@ -33,6 +33,7 @@ packageRemove() {
   printf "%b\n" "${RED}***Disabling hyprland copr***${RC}"
   if command -v dnf &>/dev/null; then
     sudo dnf copr disable solopasha/hyprland
+    sudo dnf copr disable erikreider/SwayNotificationCenter
     cmdCheck
   fi
 

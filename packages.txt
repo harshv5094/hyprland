@@ -12,3 +12,4 @@ waybar
 wlogout
 copyq
 polkit-gnome
+SwayNotificationCenter

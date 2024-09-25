@@ -17,7 +17,7 @@ cmdCheck() {
 checkFolderStatus() {
   CONFIG_DIR="$HOME/.config"
   BASE_DIR="$HOME/hyprland/.config/"
-  dir_paths=("hypr" "dunst" "wofi" "waypaper" "waybar" "wlogout")
+  dir_paths=("hypr" "swaync" "wofi" "waypaper" "waybar" "wlogout")
   printf "%b\n" "${CYAN}Checking folder status${RESET}"
   for folder in "${dir_paths[@]}"; do
     if [ -e "$HOME/.config/$folder" ]; then
@@ -40,6 +40,7 @@ packageInstall() {
   printf "%b\n" "${CYAN}***Enabling hyprland copr***${RC}"
   if command -v dnf &>/dev/null; then
     sudo dnf copr enable solopasha/hyprland
+    sudo dnf copr enable erikreider/SwayNotificationCenter
     cmdCheck
   fi
 
