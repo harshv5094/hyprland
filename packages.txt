@@ -7,7 +7,6 @@ blueman
 network-manager-applet
 grimblast
 playerctl
-pyprland
 dunst
 waybar
 wlogout
