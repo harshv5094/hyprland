@@ -1,17 +1,17 @@
-/* ************* Default ColorScheme ********************** */
-@define-color cc-bg rgba(46, 46, 46, 0.7);
+/* ************* Tokyonight ColorScheme ******************* */
+@define-color cc-bg rgba(34, 36, 54, 1);
 @define-color noti-border-color rgba(255, 255, 255, 0.15);
-@define-color noti-bg rgba(48, 48, 48, 0.8);
-@define-color noti-bg-opaque rgb(48, 48, 48);
-@define-color noti-bg-darker rgb(38, 38, 38);
-@define-color noti-bg-hover rgb(56, 56, 56);
-@define-color noti-bg-hover-opaque rgb(56, 56, 56);
-@define-color noti-bg-focus rgba(68, 68, 68, 0.6);
+@define-color noti-bg rgba(34, 36, 54, 0.8);
+@define-color noti-bg-opaque rgb(34, 36, 54);
+@define-color noti-bg-darker rgb(30, 32, 50);
+@define-color noti-bg-hover rgb(45, 63, 118);
+@define-color noti-bg-hover-opaque rgb(45, 63, 118);
+@define-color noti-bg-focus rgba(130, 170, 255, 0.6);
 @define-color noti-close-bg rgba(255, 255, 255, 0.1);
 @define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
 @define-color text-color rgb(255, 255, 255);
 @define-color text-color-disabled rgb(150, 150, 150);
-@define-color bg-selected rgb(0, 128, 255);
+@define-color bg-selected rgb(200, 211, 245);
 
 .notification-row {
   outline: none;
@@ -353,7 +353,7 @@
 .notification-group.collapsed
   .notification-row:not(:last-child)
   .notification-default-action {
-  opacity: 0;
+  opacity: 1;
 }
 
 .notification-group.collapsed:hover
@@ -367,11 +367,12 @@
   background: @cc-bg;
   color: @text-color;
   border-radius: 12px;
+  margin: 10px 12px;
 }
 
 .control-center .control-center-list-placeholder {
   /* The placeholder when there are no notifications */
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .control-center .control-center-list {
