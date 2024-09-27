@@ -1,27 +1,27 @@
 window {
   margin: 2px;
-  border: 1px solid #bd93f9;
+  border: 3px solid #ffcc77;
   border-radius: 20px;
-  background-color: #282a36;
+  background-color: #222436;
 }
 
 #input {
   margin: 8px;
   border: none;
   color: #f8f8f2;
-  background-color: #44475a;
+  background-color: #2d3f76;
 }
 
 #inner-box {
   margin: 8px;
   border: none;
-  background-color: #282a36;
+  background-color: #222436;
 }
 
 #outer-box {
   margin: 8px;
   border: none;
-  background-color: #282a36;
+  background-color: #222436;
 }
 
 #scroll {
@@ -36,5 +36,6 @@ window {
 }
 
 #entry:selected {
-  background-color: #44475a;
+  background-color: #2d3f76;
+  border: 2px solid #86e1fc;
 }
