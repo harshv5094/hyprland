@@ -11,5 +11,5 @@ dunst
 waybar
 wlogout
 copyq
-polkit-gnome
+mate-polkit
 SwayNotificationCenter
