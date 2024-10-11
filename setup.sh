@@ -42,13 +42,16 @@ packageInstall() {
     sudo dnf copr enable solopasha/hyprland
     sudo dnf copr enable erikreider/SwayNotificationCenter
     cmdCheck
-    packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
+    packages=$(grep -vE "^\s#" "$HOME/hyprland/packages/dnf.txt" | tr "\n" " ")
     printf "\n%b\n" "${CYAN} **Installing ${RED}$packages${RESET}${CYAN}** ${RESET}"
-
     sudo dnf install $packages
-    if command -v pacman &>/dev/null; then
-      sudo pacman -S
-    fi
+  fi
+
+  if command -v pacman &>/dev/null; then
+    packages=$(grep -vE "^\s#" "$HOME/hyprland/packages/pacman.txt" | tr "\n" " ")
+    printf "\n%b\n" "${CYAN} **Installing ${RED}$packages wlogout${RESET}${CYAN}** ${RESET}"
+    sudo pacman -S $packages
+    yay -S wlogout
   fi
 }
 

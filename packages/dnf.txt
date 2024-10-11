@@ -2,12 +2,11 @@ hyprland
 hyprlock
 hypridle
 hyprpicker
-waypaper
+hyprpaper
 blueman
 network-manager-applet
 grimblast
 playerctl
-dunst
 waybar
 wlogout
 copyq

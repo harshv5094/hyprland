@@ -1,0 +1,14 @@
+hyprland
+hyprpaper
+hyprpicker
+hyprpaper
+hyprlock
+waybar
+grim
+network-manager-applet
+playerctl
+swaync
+copyq
+mate-polkit
+blueman
+waybar
