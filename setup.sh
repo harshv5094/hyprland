@@ -37,17 +37,18 @@ checkFolderStatus() {
 }
 
 packageInstall() {
-  printf "%b\n" "${CYAN}***Enabling hyprland copr***${RC}"
   if command -v dnf &>/dev/null; then
+    printf "%b\n" "${CYAN}***Enabling hyprland copr***${RC}"
     sudo dnf copr enable solopasha/hyprland
     sudo dnf copr enable erikreider/SwayNotificationCenter
     cmdCheck
-  fi
+    packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
+    printf "\n%b\n" "${CYAN} **Installing ${RED}$packages${RESET}${CYAN}** ${RESET}"
 
-  packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
-  printf "\n%b\n" "${CYAN} **Installing ${RED}$packages${RESET}${CYAN}** ${RESET}"
-  if command -v dnf &>/dev/null; then
     sudo dnf install $packages
+    if command -v pacman &>/dev/null; then
+      sudo pacman -S
+    fi
   fi
 }
 

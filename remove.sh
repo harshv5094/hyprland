@@ -35,11 +35,8 @@ packageRemove() {
     sudo dnf copr disable solopasha/hyprland
     sudo dnf copr disable erikreider/SwayNotificationCenter
     cmdCheck
-  fi
-
-  packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
-  printf "\n%b\n" "${CYAN} **Removing ${RED}$packages${RESET}${CYAN}** ${RESET}"
-  if command -v dnf &>/dev/null; then
+    packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
+    printf "\n%b\n" "${CYAN} **Removing ${RED}$packages${RESET}${CYAN}** ${RESET}"
     sudo dnf remove $packages
   fi
 }
