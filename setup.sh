@@ -17,7 +17,7 @@ cmdCheck() {
 checkFolderStatus() {
   CONFIG_DIR="$HOME/.config"
   BASE_DIR="$HOME/hyprland/.config/"
-  dir_paths=("hypr" "swaync" "wofi" "waypaper" "waybar" "wlogout")
+  dir_paths=("hypr" "swaync" "wofi" "waybar" "wlogout")
   printf "%b\n" "${CYAN}Checking folder status${RESET}"
   for folder in "${dir_paths[@]}"; do
     if [ -e "$HOME/.config/$folder" ]; then

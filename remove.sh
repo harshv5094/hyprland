@@ -15,7 +15,7 @@ cmdCheck() {
 }
 
 checkFolderStatus() {
-  dir_paths=("hypr" "swaync" "waybar" "waypaper" "wlogout" "wofi")
+  dir_paths=("hypr" "swaync" "waybar" "wlogout" "wofi")
   printf "%b\n" "${CYAN}Checking folder status${RESET}"
   for folder in "${dir_paths[@]}"; do
     if [ -e "$HOME/.config/$folder" ]; then
