@@ -4,6 +4,8 @@ hyprpicker
 hyprpaper
 hyprlock
 waybar
+xdg-desktop-portal-hyprland
+wl-clipboard
 network-manager-applet
 playerctl
 swaync
