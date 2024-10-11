@@ -49,9 +49,9 @@ packageInstall() {
 
   if command -v pacman &>/dev/null; then
     packages=$(grep -vE "^\s#" "$HOME/hyprland/packages/pacman.txt" | tr "\n" " ")
-    printf "\n%b\n" "${CYAN} **Installing ${RED}$packages wlogout${RESET}${CYAN}** ${RESET}"
+    printf "\n%b\n" "${CYAN} **Installing ${RED}${packages}wlogout grimblast${RESET}${CYAN}** ${RESET}"
     sudo pacman -S $packages
-    yay -S wlogout
+    yay -S wlogout grimblast-git
   fi
 }
 

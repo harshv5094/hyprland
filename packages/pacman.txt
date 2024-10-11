@@ -4,7 +4,6 @@ hyprpicker
 hyprpaper
 hyprlock
 waybar
-grim
 network-manager-applet
 playerctl
 swaync

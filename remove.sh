@@ -42,9 +42,9 @@ packageRemove() {
 
   if command -v pacman &>/dev/null; then
     packages=$(grep -vE "^\s#" "$HOME/hyprland/packages/pacman.txt" | tr "\n" " ")
-    printf "\n%b\n" "${CYAN} **Removing ${RED}$packages wlogout${RESET}${CYAN}** ${RESET}"
+    printf "\n%b\n" "${CYAN} **Removing ${RED}${packages}wlogout grimblast${RESET}${CYAN}** ${RESET}"
     sudo pacman -Rs $packages
-    yay -Rs wlogout
+    yay -Rs wlogout grimblast-git
   fi
 }
 
