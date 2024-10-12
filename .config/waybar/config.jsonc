@@ -11,6 +11,7 @@
     "backlight",
     "clock",
     "battery",
+    "temperature",
     "custom/notification-tray",
   ],
   "group/systray": {
