@@ -1,5 +1,5 @@
 * {
-  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-family: "JetBrainsMono Nerd Font", FontAwesome,sans-serif;
   /* `otf-font-awesome` is required to be installed for icons */
   font-weight: 700;
   font-size: 15px;
