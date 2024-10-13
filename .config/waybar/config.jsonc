@@ -8,11 +8,13 @@
     "hyprland/workspaces",
     "hyprland/window"
   ],
+  "modules-center": [
+    "clock",
+  ],
   "modules-right": [
     "group/systray",
     "pulseaudio",
     "backlight",
-    "clock",
     "battery",
     "custom/notification-tray",
     "custom/power-icon"
@@ -25,9 +27,11 @@
     ],
   },
   "hyprland/window": {
-    "format": "👉 {}",
+    // "format": "{title}",
+    "format": "{class}",
     "icon": true,
-    "separate-outputs": true,
+    "icon-size": "20",
+    "seperate-outputs": true,
   },
   "tray": {
     // "icon-size": 21,
