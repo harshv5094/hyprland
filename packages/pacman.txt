@@ -4,6 +4,7 @@ hyprpicker
 hyprpaper
 hyprlock
 waybar
+otf-font-awesome
 xdg-desktop-portal-hyprland
 wl-clipboard
 network-manager-applet
