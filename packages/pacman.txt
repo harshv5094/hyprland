@@ -5,6 +5,7 @@ hyprpaper
 hyprlock
 waybar
 otf-font-awesome
+brightnessctl
 pavucontrol
 xdg-desktop-portal-hyprland
 wl-clipboard
