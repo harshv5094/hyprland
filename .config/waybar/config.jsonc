@@ -14,8 +14,8 @@
     "backlight",
     "clock",
     "battery",
-    "temperature",
     "custom/notification-tray",
+    "custom/power-icon"
   ],
   "group/systray": {
     "orientation": "horizontal",
@@ -125,4 +125,9 @@
     "format": " ",
     "reset-interval": 1,
   },
+  "custom/power-icon": {
+    "format": "⏻ ",
+    "tooltip": false,
+    "on-click": "wlogout"
+  }
 }
