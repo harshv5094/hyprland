@@ -1,10 +1,13 @@
 // -*- mode: jsonc -*-
 {
   "layer": "bottom",
-  "position": "bottom",
+  "position": "top",
   "height": 30, // Waybar height (to be removed for auto height)
   "spacing": 4, // Gaps between modules (4px)
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
   "modules-right": [
     "group/systray",
     "pulseaudio",
@@ -16,7 +19,10 @@
   ],
   "group/systray": {
     "orientation": "horizontal",
-    "modules": ["tray", "power-profiles-daemon"],
+    "modules": [
+      "tray",
+      "power-profiles-daemon"
+    ],
   },
   "hyprland/window": {
     "format": "👉 {}",
@@ -39,12 +45,26 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
   },
   "backlight": {
     // "device": "acpi_video1",
     "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "battery": {
     "states": {
@@ -59,7 +79,13 @@
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -86,7 +112,11 @@
       "phone": " ",
       "portable": " ",
       "car": " ",
-      "default": [" ", " ", " "],
+      "default": [
+        " ",
+        " ",
+        " "
+      ],
     },
     "on-click": "pavucontrol",
   },
