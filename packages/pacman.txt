@@ -5,6 +5,7 @@ hyprpaper
 hyprlock
 waybar
 otf-font-awesome
+pavucontrol
 xdg-desktop-portal-hyprland
 wl-clipboard
 network-manager-applet
