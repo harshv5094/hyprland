@@ -27,8 +27,8 @@
     ],
   },
   "hyprland/window": {
-    // "format": "{title}",
     "format": "{class}",
+    "format-alt": "{title}",
     "icon": true,
     "icon-size": "20",
     "seperate-outputs": true,
