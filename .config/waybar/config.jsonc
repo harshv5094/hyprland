@@ -13,9 +13,9 @@
   ],
   "modules-right": [
     "group/systray",
+    "battery",
     "pulseaudio",
     "backlight",
-    "battery",
     "custom/notification-tray",
     "custom/power-icon"
   ],
