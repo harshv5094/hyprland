@@ -68,7 +68,6 @@ window#waybar.termite {
 
 #clock,
 #battery,
-#systray,
 #backlight,
 #pulseaudio,
 #tray,
@@ -111,7 +110,7 @@ window#waybar.termite {
 }
 
 #power-profiles-daemon {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 #power-profiles-daemon.performance {

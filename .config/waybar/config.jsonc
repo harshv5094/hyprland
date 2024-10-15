@@ -23,12 +23,12 @@
     "orientation": "horizontal",
     "modules": [
       "tray",
-      "power-profiles-daemon"
+      "power-profiles-daemon",
     ],
   },
+  "hyprland/workspaces": {},
   "hyprland/window": {
     "format": "{class}",
-    "format-alt": "{title}",
     "icon": true,
     "icon-size": "20",
     "seperate-outputs": true,
