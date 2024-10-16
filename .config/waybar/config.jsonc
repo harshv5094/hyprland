@@ -40,8 +40,7 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "   {:%I:%M:%S %p}", //12 hour format
-    "format-alt": "  {:%a %d %b %Y}", // Sun 13 Oct 2024
+    "format": "  {:%a %d %b %Y    %I:%M:%S %p}", //12 hour format
     "interval": 1,
   },
   "backlight": {
