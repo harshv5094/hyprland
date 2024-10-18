@@ -4,7 +4,7 @@
 > This repo installation script only works fedora and arch
 
 >[!NOTE]
->For Arch I'm using `yay` as `AUR` helper, please install `yay` first before installing
+>For Arch I'm using `yay` as `AUR` helper, please install `yay` first before running this script
 
 ## `FAQ:` How To install?
 
