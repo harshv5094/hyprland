@@ -3,6 +3,9 @@
 > [!WARNING]
 > This repo installation script only works fedora and arch
 
+>[!NOTE]
+>For Arch I'm using `yay` as `AUR` helper, please install `yay` first before installing
+
 ## `FAQ:` How To install?
 
 Just run `.scripts/install.sh` to setup my configuration (Fedora and Arch Users Only).
