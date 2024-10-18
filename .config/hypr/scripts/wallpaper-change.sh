@@ -1,12 +1,16 @@
 #!/bin/bash
 
-directory=~/hyprland/wall/
-monitor=$(hyprctl monitors | grep Monitor | awk '{print $2}')
+hyprctl hyprpaper unload all
+killall hyprpaper
 
-if [ -d "$directory" ]; then
-  random_background=$(ls $directory/*.{jpg,png,webp} | shuf -n 1)
+echo "splash = false" >~/.config/hypr/hyprpaper.conf
+echo "ipc = on" >>~/.config/hypr/hyprpaper.conf
+monitors=$(hyprctl monitors -j | jq -r ".[] | .name")
 
-  hyprctl hyprpaper unload all
-  hyprctl hyprpaper preload $random_background
-  hyprctl hyprpaper wallpaper "$monitor, $random_background"
-fi
+for monitor in $monitors; do
+  wallpaper=$(fd ".png|.jpg|.jpeg|.webp" ~/hyprland/wall/ | shuf -n1)
+  echo "preload = $wallpaper" >>~/.config/hypr/hyprpaper.conf
+  echo "wallpaper = $monitor,$wallpaper" >>~/.config/hypr/hyprpaper.conf
+done
+
+hyprpaper &
