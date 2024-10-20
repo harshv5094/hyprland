@@ -23,9 +23,8 @@ window#waybar.hidden {
   }
 }
 
-
 #workspaces button {
-  padding: 0 4px;
+  padding: 0px 3px;
   background-color: transparent;
   color: #ffffff;
 }
@@ -61,7 +60,7 @@ window#waybar.hidden {
   margin: 2px;
   border-radius: 10px;
   padding: 2px 8px;
-  border: 1px solid #ffcc47;
+  border: 1.4px solid #ffcc47;
 }
 
 #battery,
