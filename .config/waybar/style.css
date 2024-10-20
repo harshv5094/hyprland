@@ -99,10 +99,8 @@ window#waybar.empty #window {
 
 /* Increasing margin of the rightest module*/
 .modules-right>widget:last-child>#custom-power-icon {
-  margin-right: 10px;
+  margin-right: 9px;
 }
-
-
 
 #battery.charging,
 #battery.plugged {
