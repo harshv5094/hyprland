@@ -55,21 +55,34 @@ window#waybar.hidden {
 #window,
 #tray,
 #workspaces,
-.modules-right {
+#battery,
+#power-profiles-daemon,
+#custom-notification-tray,
+#backlight,
+#pulseaudio,
+#custom-power-icon {
   background-color: rgba(34, 36, 54, 0.8);
-  margin: 2px;
+  margin: 2px 1.5px;
   border-radius: 10px;
   padding: 2px 8px;
   border: 1.4px solid #ffcc47;
 }
 
-#battery,
-#pulseaudio,
-#blacklight,
-#notification-tray,
-#power-profiles-daemon,
-#power-icon {
-  padding: 0px 4px;
+#custom-power-icon {
+  padding-right: 10px;
+}
+
+#power-profiles-daemon {
+  padding-right: 15px;
+}
+
+#battery {
+  padding-right: 15px;
+}
+
+#custom-notification-tray {
+  color: #ffffff;
+  padding-right: 14px;
 }
 
 
@@ -79,19 +92,17 @@ window#waybar.empty #window {
   border: none;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
+/* Increasing margin of the leftest module*/
 .modules-left>widget:first-child>#workspaces {
-  margin-left: 0;
+  margin-left: 10px;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-  margin-right: 0;
+/* Increasing margin of the rightest module*/
+.modules-right>widget:last-child>#custom-power-icon {
+  margin-right: 10px;
 }
 
-#battery {
-  padding-right: 14px;
-}
+
 
 #battery.charging,
 #battery.plugged {
@@ -109,9 +120,6 @@ window#waybar.empty #window {
   animation-direction: alternate;
 }
 
-#power-profiles-daemon {
-  padding-right: 10px;
-}
 
 #power-profiles-daemon.performance {
   color: #f53c3c;
@@ -140,8 +148,4 @@ label:focus {
 #tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
-}
-
-#custom-notification-tray {
-  color: #ffffff;
 }

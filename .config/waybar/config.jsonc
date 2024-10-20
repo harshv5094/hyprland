@@ -11,10 +11,10 @@
     "clock",
   ],
   "modules-right": [
-    "power-profiles-daemon",
-    "battery",
     "pulseaudio",
     "backlight",
+    "power-profiles-daemon",
+    "battery",
     "custom/notification-tray",
     "custom/power-icon"
   ],
@@ -107,11 +107,11 @@
   },
   "custom/notification-tray": {
     "on-click": "swaync-client -t",
-    "format": " ",
+    "format": "",
     "reset-interval": 1,
   },
   "custom/power-icon": {
-    "format": "⏻ ",
+    "format": "⏻",
     "tooltip": false,
     "on-click": "wlogout"
   }
