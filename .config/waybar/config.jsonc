@@ -31,8 +31,7 @@
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "  {:%I:%M:%S %p}", //12 hour format
-    "format-alt": "  {:%a %d %b %Y}",
+    "format": "{:%a %d %b %I:%M:%S %p}", //12 hour format
     "interval": 1,
   },
   "backlight": {
