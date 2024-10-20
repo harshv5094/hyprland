@@ -30,16 +30,11 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
+  color: #ffcc47;
 }
 
 #workspaces button.active {
   color: rgba(41, 238, 223, 1);
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: 2;
-  animation-direction: alternate;
 }
 
 #workspaces button.urgent {
