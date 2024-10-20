@@ -34,11 +34,11 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: #ff966c;
+  color: rgba(41, 238, 223, 1);
 }
 
 #workspaces button.urgent {
-  color: #f53c3c;
+  color: rgba(220, 50, 47, 1);
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
