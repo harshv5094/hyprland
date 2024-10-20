@@ -6,10 +6,10 @@
 >[!NOTE]
 >For Arch I'm using `yay` as `AUR` helper, please install `yay` first before running this script
 
-## `FAQ:` How To install?
+## How To install?
 
-Just run `.scripts/install.sh` to setup my configuration (Fedora and Arch Users Only).
+Just run `setup.sh` to setup my configuration (Fedora and Arch Users Only).
 
-## `FAQ:` How To remove?
+## How To remove?
 
-Just run `.scripts/remove.sh` to remove my configuration (Fedora and Arch Users Only).
+Just run `remove.sh` to remove my configuration (Fedora and Arch Users Only).
