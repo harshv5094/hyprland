@@ -62,7 +62,7 @@ window#waybar.hidden {
 #pulseaudio,
 #custom-power-icon {
   background-color: rgba(34, 36, 54, 0.8);
-  margin: 2px 1.5px;
+  margin: 4px 1.5px 0px;
   border-radius: 10px;
   padding: 2px 8px;
   border: 1.4px solid #ffcc47;
