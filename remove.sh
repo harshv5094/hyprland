@@ -36,14 +36,14 @@ packageRemove() {
     sudo dnf copr disable erikreider/SwayNotificationCenter
     cmdCheck
     packages=$(grep -vE "^\s#" "$HOME/hyprland/packages/dnf.txt" | tr "\n" " ")
-    printf "\n%b\n" "${CYAN} **Removing ${RED}$packages${RESET}${CYAN}** ${RESET}"
+    printf "\n%b\n" "${CYAN} **Removing ${RED}${packages}${RESET}${CYAN}** ${RESET}"
     sudo dnf remove $packages
   fi
 
   if command -v pacman &>/dev/null; then
     packages=$(grep -vE "^\s#" "$HOME/hyprland/packages/pacman.txt" | tr "\n" " ")
-    printf "\n%b\n" "${CYAN} **Removing ${RED}${packages}wlogout grimblast${RESET}${CYAN}** ${RESET}"
-    yay -Rs $packages wlogout grimblast-git
+    printf "\n%b\n" "${CYAN} **Removing ${RED}${packages}${RESET}${CYAN}** ${RESET}"
+    paru -Rs $packages
   fi
 }
 

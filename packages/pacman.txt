@@ -16,3 +16,5 @@ copyq
 mate-polkit
 blueman
 waybar
+wlogout
+grimblast-git
