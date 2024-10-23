@@ -40,6 +40,15 @@ function checkFolderStatus() {
   done
 }
 
+function wallpaperCheck() {
+  printf "%b\n" "${YELLOW} Checking Wallpaper Directory ${RESET}"
+  if [ -e "$HOME/hyprland/wall/" ]; then
+    printf "%b\n" "${GREEN} Wallpaper Directory Exist ${RESET}"
+  else
+    git clone https://github.com/harshv5094/wall "$HOME/hyprland/wall"
+  fi
+}
+
 function packageInstall() {
   if command -v dnf &>/dev/null; then
     printf "%b\n" "${CYAN}***Enabling hyprland copr***${RC}"
@@ -64,4 +73,5 @@ function packageInstall() {
 }
 
 checkFolderStatus
+wallpaperCheck
 packageInstall
