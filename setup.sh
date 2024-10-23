@@ -58,7 +58,7 @@ function packageInstall() {
   else
     printf "%b\n" "${RED} ** Paru (AUR Helper) is not Installed ** ${RESET}\n ${CYAN} ** Installing Paru ** ${RESET}"
     sudo pacman -S --noconfirm --needed git base-devel
-    git clone https://aur.archlinux.org/paru.git ~/paru/ && cd paru && makepkg -si
+    git clone https://aur.archlinux.org/paru.git ~/paru && cd ~/paru && makepkg -si
     cmdCheck
   fi
 }
