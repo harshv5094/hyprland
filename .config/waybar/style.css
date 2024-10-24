@@ -52,7 +52,6 @@ window#waybar.hidden {
 #workspaces,
 #battery,
 #power-profiles-daemon,
-#custom-notification-tray,
 #backlight,
 #pulseaudio,
 #custom-power-icon {
@@ -74,12 +73,6 @@ window#waybar.hidden {
 #battery {
   padding-right: 15px;
 }
-
-#custom-notification-tray {
-  color: #ffffff;
-  padding-right: 14px;
-}
-
 
 /* make window module transparent when no windows present */
 window#waybar.empty #window {

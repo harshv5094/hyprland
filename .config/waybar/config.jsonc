@@ -15,7 +15,6 @@
     "backlight",
     "power-profiles-daemon",
     "battery",
-    "custom/notification-tray",
     "custom/power-icon"
   ],
   "hyprland/workspaces": {},
@@ -101,11 +100,6 @@
       ],
     },
     "on-click": "pavucontrol",
-  },
-  "custom/notification-tray": {
-    "on-click": "swaync-client -t",
-    "format": "",
-    "reset-interval": 1,
   },
   "custom/power-icon": {
     "format": "⏻",
