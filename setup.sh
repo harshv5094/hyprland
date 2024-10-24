@@ -42,9 +42,10 @@ function checkFolderStatus() {
 
 function wallpaperCheck() {
   printf "%b\n" "${YELLOW} Checking Wallpaper Directory ${RESET}"
-  if [ -e "$HOME/hyprland/wall/" ]; then
+  if [ -e "$HOME/hyprland/wall/.git" ]; then
     printf "%b\n" "${GREEN} Wallpaper Directory Exist ${RESET}"
   else
+    rm -rf "$HOME/hyprland/wall"
     git clone https://github.com/harshv5094/wall "$HOME/hyprland/wall"
   fi
 }
