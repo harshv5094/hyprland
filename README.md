@@ -8,4 +8,7 @@
 ## Screenshots
 
 ![screenshot-1](./docs/screenshot-1.png)
+
 ![screenshot-2](./docs/screenshot-2.png)
+
+![screenshot-3](./docs/screenshot-3.png)
