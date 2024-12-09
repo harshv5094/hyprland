@@ -1,9 +1,14 @@
 # Hyprland Setup
 
-> [!NOTE]
->
-> - My setup is heavily based on `gnome`, So you need to have `gnome` DE in your system before installing this setup.
-> - Also, script only runs in `archlinux`.
+So, this is my hyprland rice in archlinux.\
+To install my setup:
+
+- Just make sure to clone the setup in `$HOME` directory.  
+- `cd ~/hyprland`.
+- Then run `./setup.sh`.
+
+Also, my setup contain 2 default wallpapers (screenshots are below). To change it just press `SUPER + W`.\
+To add your custom wallpapers, just add wallpapers to `~/.config/hypr/wallpapers/`, after running `setup.sh`.
 
 ## Screenshots
 
