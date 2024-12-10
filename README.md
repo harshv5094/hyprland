@@ -20,3 +20,13 @@ To add your custom wallpapers, just add wallpapers to `~/.config/hypr/wallpapers
 ![screenshot-1](./docs/screenshot-1.png)
 
 ![screenshot-2](docs/screenshot-2.png)
+
+## FAQ
+
+1. How to change the default browser?\
+To get the current default web browser:\
+`xdg-settings get default-web-browser`\
+To set the default web browser:\
+`xdg-settings set default-web-browser firefox.desktop`\
+Obviously change Firefox to whatever browser you want, and remember that you have to point to the `.desktop` file of the browser.\
+For more info, check [xdg-utils](https://man.archlinux.org/man/gsettings.1)
