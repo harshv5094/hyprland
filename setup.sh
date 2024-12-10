@@ -68,6 +68,10 @@ function packageInstall() {
     packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
     printf "%b\n" "${CYAN} **Installing Required Packages** ${RESET}"
     paru -S --noconfirm $packages
+    cmdCheck
+    printf "%b\n" "${CYAN} **Setting up XDG Default Directories** ${RESET}"
+    xdg-user-dirs-update
+    cmdCheck
   else
     printf "%b\n" "${RED} ** Paru (AUR Helper) is not Installed ** ${RESET}\n ${CYAN} ** Installing Paru ** ${RESET}"
     sudo pacman -S --noconfirm --needed git base-devel
