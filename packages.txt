@@ -23,5 +23,6 @@ hyprwall-bin
 hyprgui-bin
 xdg-desktop-portal-hyprland
 ttf-jetbrains-mono-nerd
+xdg-utils
 otf-font-awesome
 grimblast-git
