@@ -1,5 +1,10 @@
 # Hyprland Setup
 
+> [!NOTE]
+> You need to have minimal desktop installation using `archlinstall`.
+> This script doesn't configure audio, network settings, > etc.
+> You need to configure it during `archinstall`.
+
 So, this is my hyprland rice in archlinux.\
 To install my setup:
 
