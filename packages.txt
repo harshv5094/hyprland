@@ -1,5 +1,6 @@
 kitty
 thunar
+firefox
 loupe
 gnome-calculator
 vlc
