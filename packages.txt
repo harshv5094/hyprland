@@ -28,6 +28,11 @@ hyprwall-bin
 hyprgui-bin
 xdg-desktop-portal-hyprland
 ttf-jetbrains-mono-nerd
+noto-fonts
+noto-fonts-emoji
+noto-fonts-extra
+ttf-hanazono
+noto-fonts-cjk
 xdg-utils
 xdg-user-dirs
 otf-font-awesome
