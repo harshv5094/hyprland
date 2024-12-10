@@ -6,6 +6,7 @@
 > You need to configure it during `archinstall`.
 
 So, this is my hyprland rice in archlinux.\
+This setup contains minimal configuration to setting up your desktop.\
 To install my setup:
 
 - Just make sure to clone the setup in `$HOME` directory.  
