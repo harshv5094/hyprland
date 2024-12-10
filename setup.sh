@@ -65,8 +65,9 @@ function settingUpSddm() {
 
 function packageInstall() {
   if cmdExist paru; then
+    packages=$(grep -vE "^\s#" "$HOME/hyprland/packages.txt" | tr "\n" " ")
     printf "%b\n" "${CYAN} **Installing Required Packages** ${RESET}"
-    paru -S --noconfirm hyprland kitty thunar hyprpaper hyprpicker hypridle hyprlock hyprwall-bin hyprgui-bin rofi nwg-look brightnessctl pavucontrol xdg-desktop-portal-hyprland wl-clipboard copyq swaync mate-polkit blueman waybar papirus-icon-theme otf-font-awesome ttf-jetbrains-mono-nerd playerctl network-manager-applet grimblast-git
+    paru -S --noconfirm $packages
   else
     printf "%b\n" "${RED} ** Paru (AUR Helper) is not Installed ** ${RESET}\n ${CYAN} ** Installing Paru ** ${RESET}"
     sudo pacman -S --noconfirm --needed git base-devel
