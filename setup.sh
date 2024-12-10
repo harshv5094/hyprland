@@ -54,7 +54,7 @@ function checkFolderStatus() {
 
 # Install and apply a color scheme
 function extractColorScheme() {
-  local theme_dir="$HOME/Lavanda-gtk-theme"
+  local theme_dir="$HOME/Templates/Lavanda-gtk-theme"
   printf "%b\n" "${YELLOW}** Installing Lavanda Sea Dark theme directory **${RESET}"
 
   if [ -e "$theme_dir" ]; then
