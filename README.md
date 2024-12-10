@@ -1,8 +1,8 @@
 # Hyprland Setup
 
 > [!NOTE]
-> You need to have minimal desktop installation using `archlinstall`.
-> This script doesn't configure audio, network settings, > etc.
+> You need to have minimal desktop installation using `archlinstall`.\
+> This script doesn't configure audio, network settings, > etc.\
 > You need to configure it during `archinstall`.
 
 So, this is my hyprland rice in archlinux.\
@@ -23,7 +23,8 @@ To add your custom wallpapers, just add wallpapers to `~/.config/hypr/wallpapers
 
 ## FAQ
 
-1. How to change the default browser?\
+### 1. How to change the default browser?
+
 To get the current default web browser:\
 `xdg-settings get default-web-browser`\
 To set the default web browser:\
