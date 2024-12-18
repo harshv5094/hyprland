@@ -38,6 +38,7 @@ hyprwall-bin
 hyprgui-bin
 xdg-desktop-portal-hyprland
 ttf-jetbrains-mono-nerd
+inter-font
 noto-fonts
 noto-fonts-emoji
 noto-fonts-extra
