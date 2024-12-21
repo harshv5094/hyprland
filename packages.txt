@@ -34,8 +34,6 @@ network-manager-applet
 mate-polkit
 papirus-icon-theme
 nwg-look
-hyprwall-bin
-hyprgui-bin
 xdg-desktop-portal-hyprland
 ttf-jetbrains-mono-nerd
 inter-font
