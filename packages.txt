@@ -2,7 +2,6 @@ kitty
 thunar
 tumbler
 thunar-volman
-thunar-archive-manager
 thunar-media-tags-plugin
 libgepub
 libopenraw
@@ -10,9 +9,6 @@ firefox
 loupe
 gnome-calculator
 totem
-gst-libav
-gst-plugin-ugly
-grilo-plugins
 gnome-disk-utility
 evince
 hyprland
