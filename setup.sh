@@ -69,7 +69,7 @@ function extractColorScheme() {
 function settingUpSddm() {
   if cmdExist paru; then
     printf "%b\n" "${YELLOW}** Setting Up SDDM Display Manager **${RESET}"
-    paru -S --noconfirm sddm catppuccin-sddm-theme-mocha
+    paru -S --noconfirm sddm sddm-theme-tokyo-night-git
 
     if [ -e /etc/sddm.conf ]; then
       sudo rm -rf /etc/sddm.conf
