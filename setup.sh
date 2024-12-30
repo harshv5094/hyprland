@@ -58,10 +58,10 @@ function extractColorScheme() {
   printf "%b\n" "${YELLOW}** Installing Lavanda Sea Dark theme directory **${RESET}"
 
   if [ -e "$theme_dir" ]; then
-    "$theme_dir/install.sh" -l -c dark
+    "$theme_dir/install.sh" -l
   else
     git clone https://github.com/vinceliuice/Lavanda-gtk-theme "$theme_dir"
-    "$theme_dir/install.sh" -l -c dark
+    "$theme_dir/install.sh" -l
   fi
 }
 
