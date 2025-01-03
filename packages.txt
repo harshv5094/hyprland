@@ -28,7 +28,6 @@ wl-clipboard
 gnome-keyring
 network-manager-applet
 mate-polkit
-hyprwall-bin
 papirus-icon-theme
 nwg-look
 xdg-desktop-portal-hyprland
@@ -40,3 +39,4 @@ xdg-utils
 xdg-user-dirs
 otf-font-awesome
 grimblast-git
+seahorse
