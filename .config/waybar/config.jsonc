@@ -15,6 +15,7 @@
     "backlight",
     "battery",
     "pulseaudio",
+    "custom/power"
   ],
   "hyprland/workspaces": {},
   "hyprland/window": {
@@ -103,4 +104,9 @@
     },
     "on-click": "pavucontrol",
   },
+  // Custom Power Button
+  "custom/power": {
+    "format": "⏻ ",
+    "on-click": "~/.config/hypr/scripts/power_menu.sh",
+  }
 }

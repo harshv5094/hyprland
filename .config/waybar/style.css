@@ -79,7 +79,7 @@ window#waybar.empty #window {
 }
 
 /* Increasing margin of the rightest module*/
-.modules-right>widget:last-child>#pulseaudio {
+.modules-right>widget:last-child>#custom-power {
   margin-right: 2px;
 }
 
