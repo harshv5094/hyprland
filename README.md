@@ -13,7 +13,7 @@ To install my setup:
 - `cd ~/hyprland`.
 - Then run `./setup.sh`.
 
-Also, my setup contain a default wallpapers (screenshots are below).
+Also, my setup contain a default wallpapers.
 To change it just press `SUPER + W`.\
 To add your custom wallpapers, just add wallpapers to `~/Pictures/Wallpapers/`, after running `setup.sh`.
 
